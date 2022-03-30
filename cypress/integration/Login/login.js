@@ -28,5 +28,5 @@ When("I click on Login button", () => {
 
 Then("I am logged into the system", () => {
   cy.get(".UserAvatar_profileBtn__SUVMr").click();
-  cy.get(".UserAvatar_profileBtn__SUVMr").should("contain", "E");
+  cy.get(".UserAvatar_profileBtn__SUVMr").should("be.visible");
 });
